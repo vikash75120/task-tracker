@@ -1,4 +1,5 @@
 const { getAllTasks, saveAllTasks } = require("../services/taskService");
+const { isoStringTimesamp } = require("../utils/utils");
 
 module.exports = function update (args) {
     if(args.length <= 1) return " ❌ ID and descriptions are required";
@@ -10,7 +11,7 @@ module.exports = function update (args) {
     if(!targetTask) return ` ❌ No entry found with ID: ${args[0]}`
 
     targetTask.description = args[1];
-    targetTask.updatedAt = new Date().toISOString();
+    targetTask.updatedAt = isoStringTimesamp();
     saveAllTasks(tasks);
 
     return " ✅ Task updated successfully";

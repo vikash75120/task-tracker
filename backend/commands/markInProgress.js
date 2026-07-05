@@ -1,4 +1,5 @@
 const { getAllTasks, saveAllTasks } = require("../services/taskService");
+const { isoStringTimesamp } = require("../utils/utils");
 
 module.exports = function markInProgress (args){
     const id = Number(args[0]);
@@ -8,7 +9,7 @@ module.exports = function markInProgress (args){
     if(!targetTask) return ` ❌ No entry found with ID: ${args[0]}`
 
     targetTask.status = 'in-progress';
-    targetTask.updatedAt = new Date().toISOString();
+    targetTask.updatedAt = isoStringTimesamp();
 
     saveAllTasks(tasks);
     return ` ✅ ${id} marked as in-progress`;

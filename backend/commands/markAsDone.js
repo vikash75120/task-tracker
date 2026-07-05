@@ -1,4 +1,5 @@
 const { getAllTasks, saveAllTasks } = require("../services/taskService");
+const { isoStringTimesamp } = require("../utils/utils");
 
 module.exports = function markAsDone (args){
     const id = Number(args[0]);
@@ -7,7 +8,7 @@ module.exports = function markAsDone (args){
     const targetTask = tasks.find(item => item.id === id);
 
     targetTask.status = 'done';
-    targetTask.updatedAt = new Date().toISOString();
+    targetTask.updatedAt = isoStringTimesamp();
 
     saveAllTasks(tasks);
     return ` ✅ ${id} marked as done`;
