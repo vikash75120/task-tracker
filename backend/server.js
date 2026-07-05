@@ -38,8 +38,7 @@ switch (command){
         console.log(markAsTodo(args));
         break;
     case "help":
-        // console.log("help command is executing...");
-        help();
+        console.log(help());
         break;
     case "":
         console.log(" ❌ No command found. Please use help to list all the command.");

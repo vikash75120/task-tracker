@@ -1,15 +1,13 @@
 {
-    "npm start help": "list all the vaild commands",
-    "npm start add 'description'": "create a task with given description",
-    "npm start update <id> 'description'": "update the task with the given id",
-    "list": {
-        "npm start list": "list all the tasks avilable",
-        "npm start list done": "list all the tasks which are done",
-        "npm start list in-progress": "ist all the tasks which are in-progress",
-        "npm start list todo": "list all the tasks which are todo"
-    },
-    "npm start delete <id>": "delete task with the given id",
-    "npm start mark-done": "update the task's with the given id status as done",
-    "npm start mark-in-progress": "pdate the task's with the given id status as done",
-    "npm start mark-todo": "update the task's with the given id status as done"
+  "npm start help": "list all the vaild commands",
+  "npm start add 'description'": "create a task with given description",
+  "npm start update <id> 'description'": "update the task with the given id",
+  "npm start list": "list all the tasks avilable",
+  "npm start list done": "list all the tasks which are done",
+  "npm start list in-progress": "ist all the tasks which are in-progress",
+  "npm start list todo": "list all the tasks which are todo",
+  "npm start delete <id>": "delete task with the given id",
+  "npm start mark-done": "update the task's with the given id status as done",
+  "npm start mark-in-progress": "pdate the task's with the given id status as done",
+  "npm start mark-todo": "update the task's with the given id status as done"
 }

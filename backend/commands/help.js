@@ -1,7 +1,7 @@
 const commands = require('../utils/allCommands.json');
 
 function help() {
-    console.log(JSON.stringify(commands, null, 2));
+    return commands;
 }
 
 module.exports = help;

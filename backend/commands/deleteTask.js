@@ -1,9 +1,10 @@
 const { getAllTasks, saveAllTasks } = require("../services/taskService")
 
 module.exports = function deleteTask (args){
-    const id = +args[0];
+    const id = Number(args[0]);
     const tasks = getAllTasks();
 
+    if(Number.isNaN(id)) return " ❌ id should be only contain number";
     const targetTask = tasks.find(item => item.id === id);
     if(!targetTask) return ` ❌ No entry found with ID: ${args[0]}`
     
