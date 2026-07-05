@@ -1,6 +1,6 @@
 # Task Tracker CLI
 
-A simple command-line Task Tracker built with **Node.js** using the **CommonJS** module system. This project demonstrates CRUD operations, file-based persistence using JSON, and a modular backend architecture without any external libraries.
+A simple command-line Task Tracker built with **Node.js** using the **CommonJS** module system. This project demonstrates CRUD operations, file-based persistence using JSON, and a modular backend architecture without any external libraries. Project url: https://roadmap.sh/projects/task-tracker.
 
 ---
 
